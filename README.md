@@ -7,9 +7,9 @@
 **Email:** tugcenurergen9@gmail.com  
 
 **Note:** Your homeworks can be formats like ".ipynb" and ".py". **Not ".txt" files!!** Make sure that your codes works.  
+ 
+## Python knowladge competition
 
-## Project Name
-Description of your project.
 
 ## Requirements
 ```
