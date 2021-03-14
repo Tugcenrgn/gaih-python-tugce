@@ -1,78 +1,70 @@
 #Tuğçe Nur Ergen
 #Course Grade Application
 
-student1= str(input("Name Surname: "))
-midterm1 = float(input("Midterm Grade: "))
-project1= float(input("Project Grade: "))
-final1 = float(input("Final Grade: "))
+listOfMidterms= [0,0,0,0,0]
+listOfProjects=[0,0,0,0,0]
+listOfFinals=[0,0,0,0,0]
+listOfStudents=[0,0,0,0,0]
+for i in range(0,5):
+    listOfStudents[i]= str(input("Name Surname: "))
+    listOfMidterms[i]=float(input("Midterm Grade: "))
+    listOfProjects[i]=float(input("Project Grade: "))
+    listOfFinals[i]= float(input("Final Grade: "))
 
-student2= str(input("NameSurname: "))
-midterm2 = float(input("Midterm Grade: "))
-project2= float(input("Project Grade: "))
-final2= float(input("Final Grade: "))
+def passingCalculate(midterm,project,final):
+      passingGrade = midterm*(0.3) + project*(0.3) + final*(0.4)
+      return passingGrade
+    
 
-student3= str(input("Name Surname: "))
-midterm3 = float(input("Midterm Grade: "))
-project3= float(input("Project Grade: "))
-final3= float(input("Final Grade: "))
-
-student4= str(input("Name Surname: "))
-midterm4 = float(input("Midterm Grade: "))
-project4= float(input("Project Grade: "))
-final4= float(input("Final Grade: "))
-
-student5= str(input("Name Surname: "))
-midterm5 = float(input("Midterm Grade: "))
-project5= float(input("Project Grade: "))
-final5= float(input("Final Grade: "))
-
-passingGrade1= midterm1 * (0.3) + project1 * (0.3) + final1 * (0.4)
-passingGrade2= midterm2 * (0.3) + project2 * (0.3) + final2 * (0.4)
-passingGrade3= midterm3 * (0.3) + project3 * (0.3) + final3 * (0.4)
-passingGrade4= midterm4 * (0.3) + project4 * (0.3) + final4 * (0.4)
-passingGrade5= midterm5 * (0.3) + project5 * (0.3) + final5 * (0.4)
-
+passingGrade1= passingCalculate(listOfMidterms[0],listOfProjects[0],listOfFinals[0])
+passingGrade2= passingCalculate(listOfMidterms[1],listOfProjects[1],listOfFinals[1])
+passingGrade3= passingCalculate(listOfMidterms[2],listOfProjects[2],listOfFinals[2])
+passingGrade4= passingCalculate(listOfMidterms[3],listOfProjects[3],listOfFinals[3])
+passingGrade5= passingCalculate(listOfMidterms[4],listOfProjects[4],listOfFinals[4])
 students={
 'student1':{
-    'midterm':midterm1,
-    'project':project1,
-    'final':final1,
+    'name-Surname': listOfStudents[0],
+    'midterm':listOfMidterms[0],
+    'project':listOfProjects[0],
+    'final':listOfFinals[0],
     'passingGrade': passingGrade1
 },
 'student2':{
-    'midterm':midterm2,
-    'project': project2,
-    'final': final2,
+    'name-Surname': listOfStudents[1],
+    'midterm':listOfMidterms[1],
+    'project':listOfProjects[1],
+    'final':listOfFinals[1],
     'passingGrade': passingGrade2
 },
 'student3':{
-    'midterm': midterm3,
-    'project': project3,
-    'final': final3,
+    'name-Surname': listOfStudents[2],
+    'midterm':listOfMidterms[2],
+    'project':listOfProjects[2],
+    'final':listOfFinals[2],
     'passingGrade': passingGrade3
 },
 'student4':{
-    'midterm': midterm4,
-    'project': project4,
-    'final': final4,
+    'name-Surname': listOfStudents[3],
+    'midterm':listOfMidterms[3],
+    'project':listOfProjects[3],
+    'final':listOfFinals[3],
     'passingGrade': passingGrade4
 },
 'student5':{
-    'midterm': midterm5,
-    'project': project5,
-    'final': final5,
+    'name-Surname': listOfStudents[4],
+    'midterm':listOfMidterms[4],
+    'project':listOfProjects[4],
+    'final':listOfFinals[4],
     'passingGrade': passingGrade4
 }
 }
-
 list = [passingGrade1, passingGrade2, passingGrade3,passingGrade4,passingGrade5]
 list.sort()
 list.reverse()
 
 print("-DEGREE-")
-print(str(student1)+ " " +str(list[0]))
-print(str(student2)+ " " +str(list[1]))
-print(str(student3)+ " " +str(list[2]))
-print(str(student4)+ " " +str(list[3]))
-print(str(student5)+ " " +str(list[4]))
-
+print(str(students['student1']['name-Surname'])+ " " +str(list[0]))
+print(str(students['student2']['name-Surname'])+ " " +str(list[1]))
+print(str(students['student3']['name-Surname'])+ " " +str(list[2]))
+print(str(students['student4']['name-Surname'])+ " " +str(list[3]))
+print(str(students['student5']['name-Surname'])+ " " +str(list[4]))
