@@ -9,10 +9,10 @@
 **Note:** Your homeworks can be formats like ".ipynb" and ".py". **Not ".txt" files!!** Make sure that your codes works.  
  
 ## Python implementations
-HW1-List exercise
-HW2-Dictionary exercise
-HW3-Exercise of what I learned in the course
-FinalProject-Knowledge Competition
+**HW1-** List exercise
+**HW2-** Dictionary exercise
+**HW3-** Exercise of what I learned in the course
+**FinalProject-** Knowledge Competition
 
 
 
