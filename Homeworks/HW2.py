@@ -1,3 +1,5 @@
+#Tuğçe Nur Ergen
+#CV viewer application
 CV={
     "cv1":{
     'Name':"tuğçe nur",
